@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/sunburst.css">
+    <script type="text/javascript" src="prettify.js"></script>
+    <title>Easy Documentation</title>
+</head>
+
+<body style="font-size: 16px; width: 80%;" onload="PR.prettyPrint()">
+    
+    Exemplo do meu código HTML aqui:<br><br>
+  
+    <pre class="prettyprint">
+        &lt;title&gt;Proffy&lt;/title&gt;    
+        &lt;/head&gt;
+        &lt;body id="myBdy" onload="openApp()"&gt;
+        &lt;/body&gt;
+    </pre>
+    
+
+    Exemplo do meu código JavaScript aqui:
+    <pre class="prettyprint">
+        
+    function pressKey() {
+        var elem = document.documentElement;
+      
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+          elem.msRequestFullscreen();
+        }
+      
+        $('body').keydown(function(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        
+          if(e.which == 122) {
+            window.requestFullscreen();
+          } 
+        });
+      }
+    </pre>
+
+    </pre>
+    Exemplo do meu código CSS aqui:
+    <pre class="prettyprint linenums">
+    </pre>
+        
+    </body>
+</html>
